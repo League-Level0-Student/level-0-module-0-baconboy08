@@ -20,16 +20,16 @@ public class RobotSquare {
 
         // SPEED. Make the robot move quickly. Use this command:
 		  /**     rob.setSpeed(<speed>);    **/
- 
+rob.setSpeed(25);
     	// COUNT. Create an int variable that will count how many sides of the square we have drawn.
     	//        The start value will be zero because no sides have yet been drawn. Use this code:
 		  /**     int count = 0;    **/
     	
-
+int count = 0;
         // DRAW.  Draw a line. Use this command:
     		  /**     rob.move(<distance>);    **/
   
-
+rob.move(250);
 	// TURN.  Turn 90 degrees. Use this command:
     		  /**     rob.turn(<angle>);    **/
 
@@ -51,7 +51,12 @@ public class RobotSquare {
     	 *            INCREASE COUNT
     	 *      }
     	 **/
-    	
+    while (count < 4) {
+    	rob.penDown();
+    	rob.turn(90);
+    	count += 1;
+    	rob.move(250);
+    };
     	
     	// Run the program again. Did your Robot draw a square?
 
