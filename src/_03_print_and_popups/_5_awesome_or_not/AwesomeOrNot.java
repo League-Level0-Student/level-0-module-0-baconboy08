@@ -20,7 +20,7 @@ public class AwesomeOrNot {
 		// 3. Print your variable to the console
 	      System.out.println(num);
 		// 4. Get the user to enter something that they think is awesome
-	      String input = JOptionPane.showInputDialog("what do you think is awesome?");
+	      String input = JOptionPane.showInputDialog("");
 		// 5. If your variable is  0
 	if  (num == 1) {
 		JOptionPane.showMessageDialog(null,"meh, " + input + " is ok.");
